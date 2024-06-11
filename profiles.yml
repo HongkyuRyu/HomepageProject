@@ -1,0 +1,12 @@
+datapipeline:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: /usr/local/airflow/include/gcp/service_account.json
+      project: myhomepagedata
+      dataset: events_20240417
+      threads: 1
+      timeout_secounds: 300
+      location: US

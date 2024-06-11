@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: homepage
+    database: analytics_292326214
+
+    tables:
+      - name: events_20240417
+
